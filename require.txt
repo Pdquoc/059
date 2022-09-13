@@ -1,0 +1,9 @@
+threading
+requests
+socket
+os
+json
+base64
+re
+Cryptodome
+win32crypt
