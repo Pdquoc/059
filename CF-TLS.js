@@ -84,7 +84,7 @@ function proxyr() {
 if(cluster.isMaster) {
 const dateObj = new Date();
   
-    console.log(`\x1b[31mAttack Sent By PhamDinhQuoc\x1b[38;5;231m`);
+    console.log(`\x1b[31mAttack Sent By PhamDinhQuoc`);
 
     for(var bb=0;bb<thread;bb++) {
 
