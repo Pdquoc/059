@@ -84,7 +84,10 @@ function proxyr() {
 if(cluster.isMaster) {
 const dateObj = new Date();
   
-    console.log(`\x1b[38;5;231mAttack Sent Successfully \x1b[1;32mꪜ`);
+    console.log(`\x1b[31m╔═╗╔╦╗╔╦╗╔═╗╔═╗╦╔═  ╔═╗╔═╗╔╗╔╔╦╗
+╠═╣ ║  ║ ╠═╣║  ╠╩╗  ╚═╗║╣ ║║║ ║ 
+╩ ╩ ╩  ╩ ╩ ╩╚═╝╩ ╩  ╚═╝╚═╝╝╚╝ ╩ 
+\x1b[38;5;129mFacebook: \033[38;5;123mhttps://facebook.com/PhamDinhQuoc.X.Profile`);
 
     for(var bb=0;bb<thread;bb++) {
 
