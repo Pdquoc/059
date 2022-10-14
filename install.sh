@@ -1,1 +1,1 @@
-curl -sL https://deb.nodesource.com/setup_16.x | sudo bash -; sudo apt -y install nodejs; npm i http http2 crypto tls
+apt update; apt upgrade; apt install nodejs; apt install npm; npm i axios && npm i fake-useragent && npm i request && npm i fs && npm i net && npm i cloudscraper && npm i colors;
