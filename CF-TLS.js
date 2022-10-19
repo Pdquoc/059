@@ -85,10 +85,11 @@ if(cluster.isMaster) {
 const dateObj = new Date();
   
     console.log(` Attack Sent By PhamDinhQuoc <3
+
 Target: ${target}
 Time: ${time}
 Thread: ${thread}
-Proxy: ${proxys} `);
+Proxy: ${proxy} `);
 
     for(var bb=0;bb<thread;bb++) {
 
