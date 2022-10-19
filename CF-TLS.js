@@ -89,7 +89,7 @@ const dateObj = new Date();
  \x1b[38;5;231mTarget\x1b[31m:   \x1b[38;5;231m${target}
  \x1b[38;5;231mTime\x1b[31m:   \x1b[38;5;231m${time}
  \x1b[38;5;231mThread\x1b[31m:   \x1b[38;5;231m${thread}
- \x1b[38;5;231mProxy\x1b[31m:   \x1b[38;5;231m${ProxyCount()}
+ \x1b[38;5;231mProxy\x1b[31m:   \x1b[38;5;231m${proxy}
 \x1b[31m╦╩══════════════════════════════╩╦
  \x1b[38;5;231mAdmin\x1b[31m:   \x1b[38;5;231mPhamDinhQuoc
 \x1b[31m╩╦══════════════════════════════╦╩ `);
