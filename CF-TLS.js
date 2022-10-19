@@ -6,10 +6,6 @@ tls = require('tls'),
 net = require('net'),
 cluster = require('cluster'),
 fakeua = require('fake-useragent'),
-
-def ProxyCount():
-	total_proxy = []
-
 cplist = [
     "ECDHE-RSA-AES256-SHA:RC4-SHA:RC4:HIGH:!MD5:!aNULL:!EDH:!AESGCM",
     "ECDHE-RSA-AES256-SHA:AES256-SHA:HIGH:!AESGCM:!CAMELLIA:!3DES:!EDH",
@@ -93,7 +89,7 @@ const dateObj = new Date();
  \x1b[38;5;231mTarget\x1b[31m:   \x1b[38;5;231m${target}
  \x1b[38;5;231mTime\x1b[31m:   \x1b[38;5;231m${time}
  \x1b[38;5;231mThread\x1b[31m:   \x1b[38;5;231m${thread}
- \x1b[38;5;231mProxy\x1b[31m:   \x1b[38;5;231m${ProxyCount()}
+ \x1b[38;5;231mProxy\x1b[31m:   \x1b[38;5;231m$True
 \x1b[31m╦╩══════════════════════════════╩╦
  \x1b[38;5;231mAdmin\x1b[31m:   \x1b[38;5;231mPhamDinhQuoc
 \x1b[31m╩╦══════════════════════════════╦╩ `);
