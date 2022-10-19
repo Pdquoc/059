@@ -84,12 +84,15 @@ function proxyr() {
 if(cluster.isMaster) {
 const dateObj = new Date();
   
-    console.log(` Attack Sent By PhamDinhQuoc <3
-
-Target: ${target}
-Time: ${time}
-Thread: ${thread}
-Proxy: ${proxy} `);
+    console.log(`
+\x1b[31m╩╦══════════════════════════════╦╩
+ \x1b[38;5;231mTarget\x1b[31m:   \x1b[38;5;231m${target}
+ \x1b[38;5;231mTime\x1b[31m:   \x1b[38;5;231m${time}
+ \x1b[38;5;231mThread\x1b[31m:   \x1b[38;5;231m${thread}
+ \x1b[38;5;231mProxy\x1b[31m:   \x1b[38;5;231m${ProxyCount()}
+\x1b[31m╦╩══════════════════════════════╩╦
+ \x1b[38;5;231mAdmin\x1b[31m:   \x1b[38;5;231mPhamDinhQuoc
+\x1b[31m╩╦══════════════════════════════╦╩ `);
 
     for(var bb=0;bb<thread;bb++) {
 
