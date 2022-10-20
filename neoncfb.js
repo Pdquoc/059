@@ -336,9 +336,7 @@ const dateObj = new Date();
             return r*interval+min;
         }
         logger(`\x1b[38;5;231mProxy\x1b[31m: ${proxy[0]}:${proxy[1]} \x1b[38;5;231m
-Attack Sent
-
-
+Attack Sent Successfully
 `)              
 
         const agent = new http.Agent({
